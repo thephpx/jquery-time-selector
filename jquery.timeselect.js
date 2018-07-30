@@ -54,7 +54,8 @@
                 var t = times[i].split(':');
 
                 if (t[0] < 12 && (t[1].trim() == "00 AM" || t[1].trim() == "00") && morningSeparator == false) template += '<li class="separator">Morning<hr/></li>'; morningSeparator = true;
-                if (t[0] == 12 && (t[1].trim() == "00 PM" || t[1].trim() == "00")) template += '<li class="separator">Noon<hr/></li>';
+                if (t[0] == 12 && (t[1].trim() == "00 PM" || t[1].trim() == "00")) template += '<li class="separator">Afteroon<hr/></li>';
+                if (t[0] == 6 && (t[1].trim() == "00 PM" || t[1].trim() == "00")) template += '<li class="separator">Evening<hr/></li>';
             }
 
             template += '<li data-time="'+times[i]+'">'+times[i]+'</li>';

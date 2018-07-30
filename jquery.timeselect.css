@@ -22,6 +22,7 @@ ul li{
     padding: 0;
     list-style-type: none;
     padding:10px;
+    text-align: center;
 }
 ul li.separator{
     clear:both;
@@ -30,6 +31,10 @@ ul li.separator{
     margin:0;
     text-align:center;
     font-weight:bold;
+}
+
+ul li.separator:hover{
+    background-color: transparent;
 }
 ul li:hover{
     background-color: #c6c6c6;
